@@ -1,0 +1,194 @@
+/* Base do Layout da Página */
+body {
+ margin: 0;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* Header fixo sobre o topo */
+header {
+ position: absolute;
+ top: 0;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: rgba(0, 0, 0, 0.6);
+ padding: 10px 40px;
+ box-sizing: border-box;
+ z-index: 10;
+}
+
+/* Ajuste no tamanho da logo */
+.logo img {
+  height: 100px;
+}
+
+/* Menu horizontal */
+ul{
+  list-style: none;
+  display:flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Estilo dos itens do menu */
+li {
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Estilo dos links */
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+ /* Destaque no hover */
+nav a:hover {
+  color: #f5c742;
+}
+
+/* Ícones do header  que ficam na barra de navegação*/
+.icons img {
+  width: 25px;
+  margin-left: 15px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+/* Imagem principal */
+.principal img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+
+/* Texto de destaque que fica imagem */
+.texto {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 25px 35px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 50px;
+  color: #f5c742;
+  line-height: 1.1;
+}
+
+/* Subtítulo */
+.texto p {
+  margin: 0;
+  font-size: 40px;
+  color: #f5c742;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Grade de post/cards */
+#cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* Estrutura dos post/card */
+.card {
+  width: 250px;
+  text-align: center;
+}
+
+/* Imagem do post/card */
+.card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Botão do post/card */
+.card button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e1c6119c;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  background-color: #3636339c;
+}
+
+/* Seção de contatos */
+.contatos {
+  background: #000;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Logo da Sessão de contatos */
+.logo-secao {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+/* Linhas de informações */
+.linha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+/* Texto das linhas */
+.linha span {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Texto de direitos autorais */
+.copy {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; 
+  }
+
+  .texto {
+    font-size: 36px;
+    left: 5%;
+    padding: 15px 25px;
+  }
+
+  .texto p {
+    font-size: 28px;
+  }
+ }

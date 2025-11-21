@@ -1,0 +1,270 @@
+/* Base do Layout da Página */
+body {
+ margin: 0;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* Header fixo sobre o topo */
+header {
+ position: absolute;
+ top: 0;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: rgba(0, 0, 0, 0.6);
+ padding: 10px 40px;
+ box-sizing: border-box;
+ z-index: 10;
+}
+
+/* Ajuste no tamanho da logo */
+.logo img {
+  height: 100px;
+}
+
+/* Menu horizontal */
+ul{
+  list-style: none;
+  display:flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Estilo dos itens do menu */
+li {
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Estilo dos links */
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Destaque no hover */
+nav a:hover {
+  color: #f5c742;
+}
+
+/* Ícones do header  que ficam na barra de navegação*/
+.icons img {
+  width: 25px;
+  margin-left: 15px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+/* Imagem principal */
+.principal img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+
+/* Texto de destaque que fica imagem */
+.texto {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 25px 35px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 50px;
+  color: #f5c742;
+  line-height: 1.1;
+}
+
+
+/* Subtítulo */
+.texto p {
+  margin: 0;
+  font-size: 40px;
+  color: #f5c742;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+
+/* Seção inicial */
+#introducao {
+  width: 100%;
+  padding: 60px 10%;
+  box-sizing: border-box;
+}
+
+/* Layout texto + imagem */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Área de texto */
+.intro-text {
+  width: 50%;
+}
+
+/* Título */
+.intro-text h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+/* Parágrafo */
+.intro-text p {
+  font-size: 17px;
+}
+
+ /* Imagem de canto */
+.intro-img {
+  width: 320px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 10px 10px 0px #d1d1d1;
+}
+
+/* Seção dos benefícios */
+#beneficios {
+  padding: 60px 10%;
+}
+
+/* Título principal */
+#beneficios h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Linha dourada abaixo dos títulos */
+#beneficios h3 {
+    position: relative;
+    padding-bottom: 7px;
+}
+
+/* Linha dourada decorativa */
+#beneficios h3::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #d3b25f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* Cards lado a lado */
+.beneficios-cards {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Largura dos cards */
+.beneficio-card {
+  width: 33%;
+}
+
+/* Título do card */
+.beneficio-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Texto do card */
+.beneficio-card p {
+  font-size: 16px;
+}
+
+/* Última seção */
+#sessaoFinal {
+  padding: 60px 10%;
+}
+
+/* Layout final */
+.final-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Imagem da conclusao do Post */
+.final-img {
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px #d1d1d1;
+}
+
+/* Área do texto final */
+.final-text {
+  font-size: 18px;
+  width: 55%;
+}
+
+/* Seção de contatos */
+.contatos {
+  background: #000;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+
+/* Logo da Sessão de contatos */
+.logo-secao {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+/* Linhas de informações */
+.linha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+/* Texto das linhas */
+.linha span {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Texto de direitos autorais */
+.copy {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; 
+  }
+
+  .texto {
+    font-size: 36px;
+    left: 5%;
+    padding: 15px 25px;
+  }
+
+  .texto p {
+    font-size: 28px;
+  }
+ }
