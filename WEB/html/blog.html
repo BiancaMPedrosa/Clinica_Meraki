@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Blog Meraki</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="blog.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<body>
+
+
+<header>
+  <!-- Barra de Navegação Onde vai ficar o menu e os icons -->
+  <div class="logo">
+    <img src="" alt="Logo" id="logo-header">
+  </div>
+
+  <nav>
+    <ul id="menu"></ul>
+  </nav>
+
+  <div class="icons" id="icons"></div>
+</header>
+
+
+<!-- Imagem da Capa -->
+<div class="principal">
+  <img id="capa-img" src="" alt="">
+  <div class="texto">
+    <span id="capa-titulo"></span><br>
+    <p id="capa-subtitulo"></p>
+  </div>
+</div>
+
+
+<!-- Posts do Blog -->
+<section id="cards"></section>
+
+
+<!-- Contatos/endereço/parte final do site...-->
+<section class="contatos">
+  <img src="" alt="" class="logo-secao" id="contato-logo">
+
+  <div class="info" id="contato-info"></div>
+
+  <p class="copy" id="copy"></p>
+</section>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-database-compat.js"></script>
+
+<!-- JS -->
+<script src="blog.js" defer></script>
+
+</body>
+</html>
