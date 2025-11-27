@@ -1,0 +1,42 @@
+{
+  "procedimentosFaciais": [
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Toxina botulínica (Botox)",
+      "descricao": "A toxina botulínica é utilizada para suavizar rugas e linhas de expressão causadas pela movimentação facial. Ela age relaxando temporariamente os músculos que formam essas marcas, proporcionando um aspecto mais descansado, uniforme e rejuvenescido à pele. Também pode ser usada de forma preventiva, evitando que as rugas se aprofundem com o tempo."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Preenchimentos faciais (lábios, olheiras, malar, mandíbula, mento)",
+      "descricao": "Os preenchimentos faciais utilizam substâncias como o ácido hialurônico para melhorar volume, contorno e simetria do rosto. Podem ser aplicados em várias áreas: nos lábios para maior definição e hidratação; nas olheiras para reduzir o aspecto fundo; na região malar para efeito lifting; na mandíbula para contorno mais marcado; e no mento para equilibrar o perfil. O objetivo é uma harmonização natural e equilibrada."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Bioestimuladores de colágeno (Sculptura, Radiesse)",
+      "descricao": "Os bioestimuladores de colágeno, como Sculptra e Radiesse, são substâncias aplicadas na pele para estimular a produção natural de colágeno, melhorando firmeza, elasticidade e textura. Eles atuam de forma progressiva, ajudando a reduzir flacidez, promover efeito lifting suave e revitalizar a pele, com resultados que podem durar até 24 meses."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Fios de PDO",
+      "descricao": "Os fios de PDO são filamentos absorvíveis que promovem tração e estímulo de colágeno. Existem fios lisos, que melhoram a textura e firmeza da pele, e fios de tração, que proporcionam efeito lifting imediato ao reposicionar os tecidos faciais. Com o tempo, os fios são absorvidos, mas o estímulo de colágeno permanece, deixando a pele mais firme e rejuvenescida."
+    }
+  ],
+
+  "antesDepois": [
+    {
+      "titulo": "Preenchimento Labial",
+      "antes": "../img/PreenchimentoLabial.jpeg",
+      "descricao": "Rejuvenescimento e hidratação intensa."
+    },
+    {
+      "titulo": "Toxina botulínica (Botox)",
+      "antes": "../img/Botox.jpeg",
+      "descricao": "Pele mais uniforme e luminosa."
+    },
+    {
+      "titulo": "Harmonização Facial",
+      "antes": "../img/Harmonizacao.jpeg",
+      "descricao": "Remoção de impurezas e revitalização da pele."
+    }
+  ]
+}

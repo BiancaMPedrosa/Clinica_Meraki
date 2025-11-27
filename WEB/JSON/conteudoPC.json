@@ -1,0 +1,77 @@
+{
+  "procedimentosCorporais": [
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Criolipólise",
+      "descricao": "A criolipólise é um tratamento não invasivo que utiliza o resfriamento controlado para reduzir a gordura localizada. As células de gordura são submetidas a baixas temperaturas e, após o congelamento, passam por um processo natural de eliminação pelo organismo, promovendo redução de medidas de forma gradual e segura."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Criofrequência",
+      "descricao": "A criofrequência combina radiofrequência com um resfriamento intenso da superfície da pele. Esse contraste térmico estimula a produção de colágeno, melhora a firmeza da pele, reduz flacidez e auxilia no tratamento da celulite. O procedimento também ajuda na redução de medidas graças ao aquecimento profundo controlado."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Criomodelagem (na harmonização corporal)",
+      "descricao": "A criomodelagem utiliza baixas temperaturas associadas a movimentos específicos para modelar e definir áreas do corpo. O frio intenso ajuda a reduzir medidas, melhorar contornos corporais e dar mais definição à silhueta. É um procedimento rápido, confortável e muito procurado para harmonização corporal."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Dermovac",
+      "descricao": "O Dermovac é um tratamento que utiliza vacuoterapia para estimular a circulação sanguínea e linfática. Ele ajuda a melhorar a textura da pele, reduzir celulite, tratar fibroses, aliviar retenção de líquidos e potencializar resultados de outros procedimentos corporais. Também auxilia na quebra de nódulos de gordura."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Lipocavitação",
+      "descricao": "A lipocavitação utiliza ondas de ultrassom para romper células de gordura, transformando-as em substâncias líquidas que são eliminadas pelo organismo. É indicada para gordura localizada, melhora do contorno corporal e redução rápida de medidas."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Depilação a Led",
+      "descricao": "A depilação a LED é uma tecnologia avançada que atua diretamente no folículo piloso, enfraquecendo-o e reduzindo o crescimento dos pelos. É menos dolorosa que outros métodos e indicada para todos os fototipos de pele, oferecendo resultados duradouros e maior conforto durante o procedimento."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Enzimas",
+      "descricao": "As enzimas corporais são aplicadas para auxiliar na quebra de gordura, redução de medidas e melhora da celulite. São fórmulas injetáveis que agem diretamente na região desejada, acelerando o metabolismo local e potencializando resultados de forma precisa."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Emptiers",
+      "descricao": "Os emptiers são substâncias aplicadas para promover a eliminação acelerada de gordura localizada através de processos de lipólise. Diferente das enzimas tradicionais, eles têm ação mais profunda e são indicados para áreas com maior acúmulo adiposo, proporcionando resultados mais intensos."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Carboxiterapia",
+      "descricao": "A carboxiterapia utiliza a infusão de dióxido de carbono (CO₂) na pele para melhorar a oxigenação e estimular a circulação. O procedimento é eficaz para tratar celulite, estrias, flacidez e gordura localizada, além de melhorar a textura e firmeza da pele."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Lavieen",
+      "descricao": "O Lavieen, também conhecido como Laser BB Glow, é um laser de Thulium 1927 nm desenvolvido para tratar a superfície da pele com precisão, promovendo clareamento, renovação e uniformização do tom. Ele é indicado para melasma, manchas escuras, poros dilatados, rugas finas, cicatrizes superficiais e textura irregular. A tecnologia atua por meio de microfeixes fracionados que estimulam a renovação celular e a reorganização do pigmento, resultando em uma pele mais clara, luminosa e homogênea. A recuperação é rápida, com leve vermelhidão inicial, e os resultados se intensificam nas semanas seguintes, proporcionando efeito glow e rejuvenescimento natural."
+    }
+  ],
+
+  "antesDepois": [
+  {
+    "titulo": "Criolipólise",
+    "antes": "../img/Criolipolise.jpeg",
+    "descricao": "Redução visível de gordura localizada, melhora do contorno corporal e diminuição de medidas após o processo natural de eliminação das células adiposas."
+  },
+  {
+    "titulo": "Lipocavitação",
+    "antes": "../img/Lipocavitação.PNG",
+    "descricao": "Aparecimento de contornos mais definidos, redução de gordura localizada e melhora rápida nas medidas devido à quebra das células de gordura pelo ultrassom."
+  },
+  {
+    "titulo": "Lavieen",
+    "antes": "../img/Lavien.jpeg",
+    "descricao": "Clareamento de manchas, melhora do melasma, uniformização do tom da pele e textura mais lisa e luminosa com efeito glow progressivo."
+  },
+  {
+    "titulo": "Dermovac",
+    "antes": "../img/Dermovac.jpeg",
+    "descricao": "Redução de celulite, melhora da circulação, suavização de irregularidades da pele e diminuição de retenção de líquidos após a vacuoterapia."
+  }
+]
+}

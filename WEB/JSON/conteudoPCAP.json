@@ -1,0 +1,42 @@
+{
+  "procedimentosCapilares": [
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Ozônioterapia",
+      "descricao": "A ozonioterapia capilar utiliza uma mistura de oxigênio e ozônio para melhorar a oxigenação do couro cabeludo, combater micro-organismos e estimular a circulação local. O tratamento ajuda no controle da oleosidade, caspa, dermatite seborreica e queda capilar, além de promover um ambiente saudável para o crescimento dos fios."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Tratamento Capilar",
+      "descricao": "Os tratamentos capilares englobam protocolos personalizados para fortalecer os fios, melhorar a saúde do couro cabeludo e estimular o crescimento. Podem incluir hidratações profundas, detox, nutrição capilar, fortalecimento da fibra e controle de oleosidade ou queda, de acordo com a necessidade de cada paciente."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "MicroAgulhamento Capilar",
+      "descricao": "O microagulhamento capilar utiliza microperfurações controladas no couro cabeludo para estimular a produção de colágeno e aumentar a circulação. Esse processo ativa folículos capilares adormecidos e melhora a absorção de ativos, promovendo crescimento de novos fios, fortalecimento e redução da queda."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "PRP",
+      "descricao": "O PRP (Plasma Rico em Plaquetas) utiliza o próprio sangue do paciente, concentrando plaquetas e fatores de crescimento que são aplicados no couro cabeludo. O tratamento estimula a regeneração dos folículos capilares, fortalece os fios existentes e favorece o crescimento de novos cabelos, sendo indicado principalmente para queda e afinamento."
+    },
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Terapia capilar a laser",
+      "descricao": "A terapia capilar a laser de baixa intensidade estimula a circulação e aumenta a atividade celular nos folículos capilares. Com ação anti-inflamatória e regeneradora, o laser fortalece os fios, reduz a queda, melhora a densidade capilar e favorece o crescimento saudável dos cabelos."
+    }
+  ],
+
+  "antesDepois": [
+    {
+      "titulo": "Tratamento Capilar",
+      "antes": "../img/TratamentoCapilar.PNG",
+      "descricao": "Estimulação do crescimento capilar e fortalecimento dos fios."
+    },
+    {
+      "titulo": "MicroAgulhamento Capilar",
+      "antes": "../img/MicroagulhamentoCapilar.PNG",
+      "descricao": "Estímulo do crescimento e recuperação de áreas com rarefação."
+    }
+  ]
+}

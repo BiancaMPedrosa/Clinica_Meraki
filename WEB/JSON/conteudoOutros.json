@@ -1,0 +1,38 @@
+{
+"outrosServicos": [
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Roupas",
+      "descricao": "Coleção exclusiva com peças selecionadas para todos os estilos. Ideal para quem busca estilo aliado à praticidade no dia a dia"
+    },
+   {
+  "icone": "bi bi-heart",
+  "titulo": "Esmalteria",
+  "descricao": "Serviços disponíveis:<br><br><strong>Manicure e Pedicure:</strong><br>• Manicure — R$ 40,00<br>• Pedicure — R$ 45,00<br>• Esmaltação — R$ 20,00<br><br><strong>Alongamentos em gel:</strong><br>• Aplicação — R$ 190,00<br>• Manutenção em até 20 dias — R$ 130,00<br>• Manutenção +20 dias— R$ 150,00<br> • Banho de Gel - R$160,00 <br>• Manutenção até 20 dias — R$ 120,00<br>• Manutenção +20 dias — R$ 140,00<br>• Blindagem - R$100,00<br>• Esmaltação em gel— R$130,00<br>• Remoção para nova aplicação— R$ 40,00<br>• Remoção — R$ 60,00 (*incluso esmaltação)<br>• Reposição de Unha - R$15,00 (cada)<br><br><strong>Pacote:</strong><br> • 4 mãos - R$140,00<br>• 4 mãos e 1 pé - R$180,00<br>• 4 mãos e 2 pé - R$220,00"
+},
+
+    {
+      "icone": "bi bi-heart",
+      "titulo": "Suplementos Alimentares",
+      "descricao": "<strong>Porque escolher suplementos em pó ?</strong><br> Absorção mais rápida, fácil de misturar, ideal para o dia a dia.<br><br><strong>Opções Disponíveis : </strong><br>• Detox - Reduz inchaço, melhora a circulação e tem acão anti-inflamatória.<br>• Matinal Green - Ajuda no funcionamento do intestino, acelera o metabolismo e tem efeito antioxidante.<br>• Dreams - Melhora a qualidade do sono, reduz a ansiedade e alivia os sintomas da TPM."
+    }
+  ],
+
+  "antesDepois": [
+    {
+      "titulo": "Roupas",
+      "antes": "../img/Roupas.jpeg",
+      "descricao":"Variedade de opções, venha conferir nosso Bazar !"
+    },
+    {
+      "titulo": "Esmalteria",
+      "antes": "../img/Esmalteria.jpeg",
+      "descricao": "Manicure, pedicure e muito carinho em cada cuidado ! "
+    },
+    {
+      "titulo": "Suplementos Alimentares",
+      "antes": "../img/Suplementos.jpeg",
+      "descricao": "Praticidade e resultados !"
+    }
+  ]
+}
