@@ -1,0 +1,77 @@
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("../JSON/conteudo.json")
+    .then(res => res.json())
+    .then(data => {
+      preencherCarrossel(data.carousel);
+      preencherAvaliacoes(data.avaliacoes);
+     const descContainer = document.getElementById("descricao-texto");
+
+    if (data.descricao && data.descricao.length > 0) {
+      const texto = data.descricao[0].texto;
+
+      // quebra em 2 parágrafos automaticamente
+      const partes = texto.split(". ").map(p => p.trim()).filter(p => p.length > 0);
+
+      descContainer.innerHTML = `
+        <p>${partes.slice(0, 4).join(". ") + "."}</p>
+        <br>
+        <p>${partes.slice(4).join(". ") + "."}</p>
+      `;
+    }
+    })
+    .catch(err => console.error("Erro ao carregar JSON:", err));
+});
+
+
+function preencherCarrossel(itens) {
+  const carousel = document.getElementById("carousel-content");
+  carousel.innerHTML = "";
+
+  itens.forEach((item, i) => {
+    carousel.innerHTML += `
+      <div class="carousel-item ${i === 0 ? "active" : ""}">
+        <img src="${item.imagem}" class="d-block w-100" alt="${item.titulo}">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>${item.titulo}</h5>
+          <p>${item.descricao}</p>
+        </div>
+      </div>
+    `;
+  });
+}
+
+function preencherAvaliacoes(avaliacoes) {
+  const container = document.getElementById("avaliacoes-content");
+  container.innerHTML = "";
+
+  avaliacoes.forEach(av => {
+    const estrelas = "⭐️".repeat(av.nota);
+    container.innerHTML += `
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-sm p-3">
+          <h5>${estrelas}</h5>
+          <p>"${av.texto}"</p>
+          <small>- ${av.nome}</small>
+        </div>
+      </div>
+    `;
+  });
+}
+   const vlibrasContainer = document.createElement("div");
+      vlibrasContainer.setAttribute("vw", "");
+      vlibrasContainer.classList.add("enabled");
+      vlibrasContainer.innerHTML = `
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      `;
+      document.body.appendChild(vlibrasContainer);
+
+      const scriptVLibras = document.createElement("script");
+      scriptVLibras.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+      scriptVLibras.onload = () => {
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      };
+      document.body.appendChild(scriptVLibras);
+
