@@ -1,0 +1,434 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid #fae952;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fae952 !important;
+}
+
+/* Ícone do menu mobile */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* CARROSSEL */
+#carouselMeraki {
+  margin-top: 80px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+.carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px black;
+}
+
+.carousel-caption p {
+  text-shadow: 1px 1px 3px white;
+}
+
+/* HEADER */
+header {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-header {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("") center/cover no-repeat;
+  padding-left: 10%;
+}
+
+.hero-content {
+  position: relative;
+  text-align: left;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: rgb(255, 227, 69);
+  border: none;
+  color: #000000;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.social-icons i {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ffe5ee;
+}
+
+.dropdown-menu {
+  background-color: black;
+  border: none;
+  backdrop-filter: blur(6px);
+}
+
+.dropdown-item {
+  color: gray;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: gray;
+  color: #fff;
+}
+
+#footer {
+  background: #000;
+}
+
+/* FOOTER */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  max-width: 180px;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-menu li a i {
+  list-style: none;
+  padding: 0;
+  margin-right: 6px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-menu li a:hover i {
+  transform: translateX(4px);
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+#direitos {
+  color: white;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.info-box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+h6, p {
+  color: #333;
+}
+
+i {
+  color: #fae952;
+}
+
+/* BACKGROUND PRINCIPAL */
+#principal {
+  background-image: url("../img/MERAKI.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SESSÃO DESCRIÇÃO */
+.descricao-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.imagem-doutora {
+  width: 320px;
+  max-width: 90%;
+}
+
+.texto-descricao {
+  max-width: 600px;
+  text-align: right;
+}
+
+.titulo-descricao {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  line-height: 1.4;
+}
+
+.titulo-descricao span {
+  color: #d4a30b;
+  font-weight: 700;
+}
+
+.subtitulo-descricao {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: right;
+}
+
+.descricao-conteudo {
+  margin-top: 20px;
+  text-align: right;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Procedimentos */
+
+.accordion-button {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-weight: 500;
+  border: none;
+}
+
+/* Botão aberto */
+.accordion-button:not(.collapsed) {
+  background-color: #111 !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
+/* Ícone da setinha branco */
+.accordion-button::after {
+  filter: invert(1);
+}
+
+/* Conteúdo interno */
+.accordion-body {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+
+/* Background de outras páginas */
+#principal_pf,
+#principal_pc,
+#principal_outrosServicos,
+#principal_pcap,
+#principal_agend {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#principal_pf {
+  min-height: 70vh;
+  padding-top: 100px;
+  background-image: url("../img/PF.jpg");
+}
+
+#principal_pc {
+  background-image: url("../img/PC_copia.jpg");
+  background-size: 110%;
+  height: 70vh;
+}
+
+#principal_outrosServicos {
+  min-height: 60vh;
+  padding-top: 90px;
+  background-image: url("../img/OutrosServicos.png");
+}
+
+#principal_pcap {
+  min-height: 70vh;
+  padding-top: 100px;
+  background-image: url("../img/capilar.jpeg");
+}
+
+#principal_agend {
+  min-height: 90vh;
+  padding-top: 100px;
+  background-image: url("../img/agendamento.jpg");
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .hero-header {
+    width: 100%;
+    height: 45vh !important;
+    padding-left: 5%;
+    background-position: center;
+  }
+
+  .hero-content {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+/* Sessão descrição responsiva */
+@media (max-width: 992px) {
+  .descricao-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .texto-descricao,
+  .subtitulo-descricao,
+  .descricao-conteudo {
+    text-align: center !important;
+  }
+
+  .imagem-doutora {
+    width: 260px;
+  }
+}
+
+/* Carrossel em celular */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 260px;
+  }
+}
+
+/* Footer responsivo */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-content iframe {
+    width: 100% !important;
+    height: 280px !important;
+  }
+}
+
+/* Backgrounds sem distorcer */
+@media (max-width: 768px) {
+  #principal,
+  #principal_pf,
+  #principal_pc,
+  #principal_pcap,
+  #principal_agend,
+  #principal_outrosServicos {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
