@@ -18,6 +18,29 @@ header {
  z-index: 10;
 }
 
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu {
+  background: #0d0d0d !important;
+  border-radius: 12px;
+  padding: 12px 0;
+  border: none;
+}
+
+.navbar-nav .dropdown-item {
+  color: #ccc !important;
+  padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background: rgba(255,255,255,0.10) !important;
+  color: #fff !important;
+}
+
 /* Ajuste no tamanho da logo */
 .logo img {
   height: 100px;

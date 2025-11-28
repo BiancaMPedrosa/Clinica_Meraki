@@ -17,20 +17,56 @@ db.ref("/").once("value").then(snapshot => {
 
 // HEADER
 function montarHeader(header) {
+  // Logo
   document.getElementById("logo-header").src = header.logo;
 
+  // MENU
   const menu = document.getElementById("menu");
   menu.innerHTML = "";
+
   header.menu.forEach(item => {
-    menu.innerHTML += `<li><a href="${item.link}">${item.nome}</a></li>`;
+    // Se tiver submenu → cria dropdown
+    if (item.submenu) {
+      menu.innerHTML += `
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            ${item.nome}
+          </a>
+
+          <ul class="dropdown-menu">
+            ${item.submenu
+              .map(sub => `
+                <li><a class="dropdown-item" href="${sub.link}">${sub.nome}</a></li>
+              `)
+              .join("")}
+          </ul>
+        </li>
+      `;
+    }
+
+    // Se NÃO tiver submenu → item comum
+    else {
+      menu.innerHTML += `
+        <li class="nav-item">
+          <a class="nav-link" href="${item.link}">${item.nome}</a>
+        </li>
+      `;
+    }
   });
 
+  // ICONES
   const icons = document.getElementById("icons");
   icons.innerHTML = "";
+
   header.icones.forEach(ic => {
-    icons.innerHTML += `<a href="${ic.link}"><img src="${ic.imagem}"></a>`;
+    icons.innerHTML += `
+      <a href="${ic.link}">
+        <img src="${ic.imagem}">
+      </a>
+    `;
   });
 }
+
 
 // CAPA
 function montarCapa(capa) {
