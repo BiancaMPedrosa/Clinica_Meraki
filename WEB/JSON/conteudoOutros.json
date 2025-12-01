@@ -21,17 +21,17 @@
   "antesDepois": [
     {
       "titulo": "Roupas",
-      "antes": "../img/Roupas.jpeg",
+      "antes": "/WEB/Imagens/Roupas.jpeg",
       "descricao":"Variedade de opções, venha conferir nosso Bazar !"
     },
     {
       "titulo": "Esmalteria",
-      "antes": "../img/Esmalteria.jpeg",
+      "antes": "/WEB//Imagens/Esmalteria.jpeg",
       "descricao": "Manicure, pedicure e muito carinho em cada cuidado ! "
     },
     {
       "titulo": "Suplementos Alimentares",
-      "antes": "../img/Suplementos.jpeg",
+      "antes": "/WEB/Imagens/Suplementos.jpeg",
       "descricao": "Praticidade e resultados !"
     }
   ]

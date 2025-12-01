@@ -134,20 +134,3 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.onclick = () => fecharModal(btn.closest(".modal"));
   });
 });
- const vlibrasContainer = document.createElement("div");
-      vlibrasContainer.setAttribute("vw", "");
-      vlibrasContainer.classList.add("enabled");
-      vlibrasContainer.innerHTML = `
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      `;
-      document.body.appendChild(vlibrasContainer);
-
-      const scriptVLibras = document.createElement("script");
-      scriptVLibras.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
-      scriptVLibras.onload = () => {
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      };
-      document.body.appendChild(scriptVLibras);

@@ -30,12 +30,12 @@
   "antesDepois": [
     {
       "titulo": "Tratamento Capilar",
-      "antes": "../img/TratamentoCapilar.PNG",
+      "antes": "/WEB/Imagens/TratamentoCapilar.PNG",
       "descricao": "Estimulação do crescimento capilar e fortalecimento dos fios."
     },
     {
       "titulo": "MicroAgulhamento Capilar",
-      "antes": "../img/MicroagulhamentoCapilar.PNG",
+      "antes": "/WEB/Imagens/MicroagulhamentoCapilar.PNG",
       "descricao": "Estímulo do crescimento e recuperação de áreas com rarefação."
     }
   ]

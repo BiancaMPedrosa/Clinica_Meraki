@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../JSON/conteudoOutros.json")
+  fetch("/WEB/JSON/conteudoOutros.json")
     .then(res => res.json())
     .then(data => {
       preencherOutros(data.outrosServicos);
