@@ -227,7 +227,7 @@ i {
 
 /* BACKGROUND PRINCIPAL */
 #principal {
-  background-image: url("/WEB/Imagens/meraki.PNG");
+  background-image: url("/WEB/Imagens/MerakiHome.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ i {
 }
 
 #principal_pf {
-  min-height: 70vh;
+  
   padding-top: 100px;
   background-image: url("/WEB/Imagens/PF.jpg");
   height: 550px;
@@ -333,21 +333,21 @@ i {
 }
 
 #principal_outrosServicos {
-  min-height: 60vh;
+  
   padding-top: 90px;
   background-image: url("/WEB/Imagens/OutrosServicos.png");
   height: 550px;
 }
 
 #principal_pcap {
-  min-height: 70vh;
+  
   padding-top: 100px;
   background-image: url("/WEB/Imagens/capilar.jpeg");
   height: 550px;
 }
 
 #principal_agend {
-  min-height: 90vh;
+
   padding-top: 100px;
   background-image: url("/WEB/Imagens/agendamento.jpg");
   height: 550px;
