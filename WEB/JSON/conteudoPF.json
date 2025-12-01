@@ -25,17 +25,17 @@
   "antesDepois": [
     {
       "titulo": "Preenchimento Labial",
-      "antes": "../img/PreenchimentoLabial.jpeg",
+      "antes": "/WEB/Imagens/PreenchimentoLabial.jpeg",
       "descricao": "Rejuvenescimento e hidratação intensa."
     },
     {
       "titulo": "Toxina botulínica (Botox)",
-      "antes": "../img/Botox.jpeg",
+      "antes": "/WEB/Imagens/Botox.jpeg",
       "descricao": "Pele mais uniforme e luminosa."
     },
     {
       "titulo": "Harmonização Facial",
-      "antes": "../img/Harmonizacao.jpeg",
+      "antes": "/WEB/Imagens/Harmonizacao.jpeg",
       "descricao": "Remoção de impurezas e revitalização da pele."
     }
   ]

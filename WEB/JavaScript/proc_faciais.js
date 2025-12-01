@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../JSON/conteudoPF.json")
+  fetch("/WEB/JSON/conteudoPF.json")
     .then(res => res.json())
     .then(data => {
       preencherProcedimentos(data.procedimentosFaciais);

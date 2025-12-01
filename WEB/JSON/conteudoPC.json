@@ -55,22 +55,22 @@
   "antesDepois": [
   {
     "titulo": "Criolipólise",
-    "antes": "../img/Criolipolise.jpeg",
+    "antes": "WEB/Imagens/Criolipolise.jpeg",
     "descricao": "Redução visível de gordura localizada, melhora do contorno corporal e diminuição de medidas após o processo natural de eliminação das células adiposas."
   },
   {
     "titulo": "Lipocavitação",
-    "antes": "../img/Lipocavitação.PNG",
+    "antes": "/WEB/Imagens/Lipocavitação.PNG",
     "descricao": "Aparecimento de contornos mais definidos, redução de gordura localizada e melhora rápida nas medidas devido à quebra das células de gordura pelo ultrassom."
   },
   {
     "titulo": "Lavieen",
-    "antes": "../img/Lavien.jpeg",
+    "antes": "/WEB/Imagens/Lavien.jpeg",
     "descricao": "Clareamento de manchas, melhora do melasma, uniformização do tom da pele e textura mais lisa e luminosa com efeito glow progressivo."
   },
   {
     "titulo": "Dermovac",
-    "antes": "../img/Dermovac.jpeg",
+    "antes": "/WEB/Imagens/Dermovac.jpeg",
     "descricao": "Redução de celulite, melhora da circulação, suavização de irregularidades da pele e diminuição de retenção de líquidos após a vacuoterapia."
   }
 ]
