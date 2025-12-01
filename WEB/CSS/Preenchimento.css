@@ -1,12 +1,10 @@
-/* Base do Layout da Página */
-/* Base */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
 }
 
-/* Header fixo */
+/* HEADER */
 header {
   position: absolute;
   top: 0;
@@ -14,86 +12,109 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
   padding: 10px 40px;
-  box-sizing: border-box;
   border-bottom: 2px solid #fae952;
-  z-index: 10;
+  z-index: 1000;
 }
 
-/* NAV – hover dourado */
 .navbar-nav .nav-link {
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
-  transition: color .25s;
+  transition: color 0.25s;
 }
 
 .navbar-nav .nav-link:hover {
   color: #fae952 !important;
 }
 
-.navbar-nav .dropdown-menu {
-  background: black !important;
-  border: none;
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
-  padding: 12px 0;
+
+.nav-item.dropdown {
+  position: relative;
 }
 
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+  top: 45px !important;        
+  left: 0;
+  
+  background: rgba(0, 0, 0, 0.95) !important;
+  padding: 10px 0;
+  border-radius: 12px;
+  border: none;
+  min-width: 200px;
+  backdrop-filter: blur(4px);
+
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ITENS DO DROPDOWN */
 .navbar-nav .dropdown-item {
-  color: #ccc !important;
-  padding: 10px 20px;
+  padding: 14px 22px;
+  font-size: 16px;
+  color: #e5e5e5 !important;
+  transition: 0.2s;
 }
 
 .navbar-nav .dropdown-item:hover {
-  background: rgba(255,255,255,0.10) !important;
+  background: rgba(255,255,255,0.15) !important;
   color: #fae952 !important;
 }
-
-/* Logo */
+/* LOGO */
 .logo img {
-  height: 90px;
+  height: 100px;
 }
 
-/* Menu */
+/* MENU PRINCIPAL */
 ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 70px;
 }
 
 li {
-  text-decoration: none;
-  color: #fff;
+  font-size: 17px;
   font-weight: 600;
-  font-size: 16px;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-  font-weight: 600;
   transition: 0.3s;
 }
-
 
 nav a:hover {
   color: #fae952;
 }
 
-/* Ícones */
+/* ICONS */
 .icons img {
-  width: 25px;
+  width: 26px;
   margin-left: 15px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s;
   cursor: pointer;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
 }
 
-/* Imagem principal */
+.icons img:hover {
+  transform: scale(1.15);
+  filter: brightness(0) invert(1) sepia(1) saturate(2000%) hue-rotate(10deg);
+}
+
+/* IMAGEM PRINCIPAL */
 .principal img {
   width: 100%;
   height: 550px;
@@ -101,22 +122,29 @@ nav a:hover {
   filter: brightness(85%);
 }
 
-/* Texto sobre a imagem */
-.texto 
-{ position: absolute; 
-top: 60%;
-left: 10%;
-background-color: rgba(255, 255, 255, 0.25);
-padding: 25px 35px; font-family: 'Cinzel Decorative', cursive;
-font-size: 50px; 
-color: #f5c742; line-height: 1.1;  
+
+.texto {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 35px 45px;
+  border-radius: 20px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 48px;
+  color: #f5d15c;
+  line-height: 1.1;
+  backdrop-filter: blur(4px);
 }
 
- .texto p 
- { margin: 0;
-  font-size: 40px;
-  color: #f5c742; font-family: 'Montserrat', sans-serif; font-weight: 500; 
- }
+.texto p {
+  margin: 0;
+  font-size: 42px;
+  color: #f5d15c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
 
 /* Seção inicial */
 #introducao {

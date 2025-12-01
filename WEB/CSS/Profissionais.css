@@ -21,13 +21,19 @@ header {
   color: #fff;
   font-size: 15px;
   font-weight: 600;
+  transition: color .25s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fae952 !important;
 }
 
 .navbar-nav .dropdown-menu {
-  background: #0d0d0d !important;
-  border-radius: 12px;
-  padding: 12px 0;
+  background: black !important;
   border: none;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  padding: 12px 0;
 }
 
 .navbar-nav .dropdown-item {
@@ -37,11 +43,12 @@ header {
 
 .navbar-nav .dropdown-item:hover {
   background: rgba(255,255,255,0.10) !important;
-  color: #fff !important;
+  color: #fae952 !important;
 }
+
 /* Ajuste no tamanho da logo */
 .logo img {
-  height: 100px;
+  height: 90px;
 }
 
 /* Menu horizontal */
@@ -69,13 +76,11 @@ a{
   font-size: 16px;
   transition: color 0.3s;
 }
-
- /* Destaque no hover */
 nav a:hover {
-  color: #f5c742;
+  color: #fae952;
 }
 
-/* Ícones do header  que ficam na barra de navegação*/
+/* Ícones */
 .icons img {
   width: 25px;
   margin-left: 15px;
@@ -87,31 +92,27 @@ nav a:hover {
 /* Imagem principal */
 .principal img {
   width: 100%;
-  height: 1000px;
+  height: 550px;
   object-fit: cover;
+  filter: brightness(85%);
 }
 
-/* Texto de destaque que fica imagem */
-.texto {
-  position: absolute;
-  top: 60%;
-  left: 10%;
-  background-color: rgba(255, 255, 255, 0.25);
-  padding: 25px 35px;
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 50px;
-  color: #f5c742;
-  line-height: 1.1;
+.texto 
+{ position: absolute; 
+top: 60%;
+left: 10%;
+background-color: rgba(255, 255, 255, 0.25);
+padding: 25px 35px; font-family: 'Cinzel Decorative', cursive;
+font-size: 50px; 
+color: #f5c742; line-height: 1.1;  
 }
 
-/* Subtítulo */
-.texto p {
-  margin: 0;
+ .texto p 
+ { margin: 0;
   font-size: 40px;
-  color: #f5c742;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
+  color: #f5c742; font-family: 'Montserrat', sans-serif; font-weight: 500; 
+ }
+ 
 
 
 
