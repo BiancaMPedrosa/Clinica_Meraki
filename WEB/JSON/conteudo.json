@@ -1,17 +1,17 @@
 {
   "carousel": [
     {
-      "imagem": "../img/carousel1.jpg",
+      "imagem": "/WEB/Imagens/carousel1.jpg",
       "titulo": "Beleza e Cuidado",
       "descricao": "Tratamentos personalizados para realçar sua beleza natural"
     },
     {
-      "imagem": "../img/carousel2.jpg",
+      "imagem": "/WEB/Imagens/carousel2.jpg",
       "titulo": "Cuidados com a Pele",
       "descricao": "Procedimentos seguros e realizados por profissionais qualificados"
     },
     {
-      "imagem": "../img/carousel3.jpg",
+      "imagem": "/WEB/Imagens/carousel3.jpg",
       "titulo": "Resultados Visíveis",
       "descricao": "Veja a diferença com nossos tratamentos exclusivos"
     }

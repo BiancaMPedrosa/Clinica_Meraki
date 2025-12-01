@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../JSON/conteudo.json")
+  fetch("/WEB/JSON/conteudo.json")
     .then(res => res.json())
     .then(data => {
       preencherCarrossel(data.carousel);
