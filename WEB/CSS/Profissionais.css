@@ -1,33 +1,44 @@
+/* Base */
 body {
- margin: 0;
- font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
 }
 
-/* Header fixo sobre o topo */
+/* Header fixo */
 header {
- position: absolute;
- top: 0;
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: space-between;
- background-color: rgba(0, 0, 0, 0.6);
- padding: 10px 40px;
- box-sizing: border-box;
- z-index: 10;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  padding: 10px 40px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fae952;
+  z-index: 10;
 }
 
+/* NAV – hover dourado */
 .navbar-nav .nav-link {
   color: #fff;
   font-size: 15px;
   font-weight: 600;
+  transition: color .25s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fae952 !important;
 }
 
 .navbar-nav .dropdown-menu {
-  background: #0d0d0d !important;
-  border-radius: 12px;
-  padding: 12px 0;
+  background: black !important;
   border: none;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  padding: 12px 0;
 }
 
 .navbar-nav .dropdown-item {
@@ -37,45 +48,42 @@ header {
 
 .navbar-nav .dropdown-item:hover {
   background: rgba(255,255,255,0.10) !important;
-  color: #fff !important;
-}
-/* Ajuste no tamanho da logo */
-.logo img {
-  height: 100px;
+  color: #fae952 !important;
 }
 
-/* Menu horizontal */
-ul{
+/* Logo */
+.logo img {
+  height: 90px;
+}
+
+/* Menu */
+ul {
   list-style: none;
-  display:flex;
+  display: flex;
   align-items: center;
   gap: 60px;
 }
 
-/* Estilo dos itens do menu */
 li {
-  text-decoration: none;
-  color: var(--text-white);
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-/* Estilo dos links */
-a{
   text-decoration: none;
   color: #fff;
   font-weight: 600;
   font-size: 16px;
-  transition: color 0.3s;
 }
 
- /* Destaque no hover */
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+
 nav a:hover {
-  color: #f5c742;
+  color: #fae952;
 }
 
-/* Ícones do header  que ficam na barra de navegação*/
+/* Ícones */
 .icons img {
   width: 25px;
   margin-left: 15px;
@@ -89,30 +97,25 @@ nav a:hover {
   width: 100%;
   height: 1000px;
   object-fit: cover;
+  filter: brightness(85%);
 }
 
-/* Texto de destaque que fica imagem */
-.texto {
-  position: absolute;
-  top: 60%;
-  left: 10%;
-  background-color: rgba(255, 255, 255, 0.25);
-  padding: 25px 35px;
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 50px;
-  color: #f5c742;
-  line-height: 1.1;
+/* Texto sobre a imagem */
+.texto 
+{ position: absolute; 
+top: 60%;
+left: 10%;
+background-color: rgba(255, 255, 255, 0.25);
+padding: 25px 35px; font-family: 'Cinzel Decorative', cursive;
+font-size: 50px; 
+color: #f5c742; line-height: 1.1;  
 }
 
-/* Subtítulo */
-.texto p {
-  margin: 0;
+ .texto p 
+ { margin: 0;
   font-size: 40px;
-  color: #f5c742;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
-
+  color: #f5c742; font-family: 'Montserrat', sans-serif; font-weight: 500; 
+ }
 
 
 /* LISTA DE PROFISSIONAIS */

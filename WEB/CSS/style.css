@@ -221,7 +221,7 @@ i {
 
 /* BACKGROUND PRINCIPAL */
 #principal {
-  background-image: url("/WEB/Imagens/meraki.PNGS");
+  background-image: url("/WEB/Imagens/meraki.PNG");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ i {
 #principal_pf {
   min-height: 70vh;
   padding-top: 100px;
-  background-image: url("/wEB/Imagens/PF.jpg");
+  background-image: url("/WEB/Imagens/PF.jpg");
 }
 
 #principal_pc {
