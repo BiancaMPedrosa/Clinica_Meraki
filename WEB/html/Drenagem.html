@@ -12,44 +12,46 @@
 
 <body>
  <!-- Barra de navegação com o menu e os icons -->
- <header>
+ <header role="banner">
   <div class="logo">
-    <img src="" id="logo-header">
+    <img src="" id="logo-header" alt="Logo da Clínica">
   </div>
 
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
     <ul class="navbar-nav flex-row gap-5" id="menu"></ul>
   </nav>
 
-  <div class="icons" id="icons"></div>
+  <div class="icons" id="icons" role="group" aria-label="Links rápidos"></div>
 </header>
 
 <!-- CAPA -->
 <div class="principal">
-  <img id="capa-img" src="" alt="Uma pessoa fazendo uma Drenagem">
+  <img id="capa-img" src="" alt="Aplicação de técnica de drenagem linfática">
+
   <div class="texto">
-    <span id="capa-titulo"></span>
+    <span id="capa-titulo" role="heading" aria-level="1"></span>
   </div>
 </div>
 
-<!-- Seções do post -->
-<section id="introducao"></section>
-<section id="beneficios"></section>
-<section id="sessaoFinal"></section>
+<!-- Seções -->
+<section id="introducao" tabindex="0" aria-labelledby="intro-titulo"></section>
+<section id="beneficios" tabindex="0" aria-labelledby="beneficios-titulo"></section>
+<section id="sessaoFinal" tabindex="0" aria-labelledby="final-titulo"></section>
 
-<!-- CONTATOS -->
-<section class="contatos">
-  <img id="contato-logo" class="logo-secao" alt="Logo da Clinica">
+<!-- Contatos -->
+<section class="contatos" role="contentinfo" aria-label="Informações de contato">
+  <img id="contato-logo" class="logo-secao" alt="Logo da Clínica">
 
   <div class="info" id="contato-info"></div>
 
   <p class="copy" id="copy"></p>
 </section>
 
-
+<!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 <script src="/WEB/JavaScript/Drenagem.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

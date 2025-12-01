@@ -185,6 +185,7 @@ color: #f5c742; line-height: 1.1;
 .contatos img {
    filter: sepia(1) saturate(1300%) hue-rotate(10deg) brightness(1.7);
 }
+/* Proteção para o VLibras */
 
 .logo-secao {
   width: 150px;

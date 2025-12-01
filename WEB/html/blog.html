@@ -3,47 +3,49 @@
   <head>
     <title>Blog Meraki</title>
     <meta charset="utf-8">
+
+    <!-- Acessibilidade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog da Clínica Meraki — conteúdos sobre estética, saúde e bem-estar.">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/WEB/CSS/blog.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
   </head>
 
 <body>
 
+<!-- Link de pular para o conteúdo -->
+<a href="#cards" class="skip-link" tabindex="0">Pular para o conteúdo</a>
 
-<header>
+<header role="banner">
   <div class="logo">
-    <img src="" id="logo-header">
+    <img src="" id="logo-header" alt="Logo da Clínica Meraki">
   </div>
 
-  <nav class="navbar">
-    <ul class="navbar-nav flex-row gap-5" id="menu"></ul>
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <ul class="navbar-nav flex-row gap-5" id="menu" role="menubar"></ul>
   </nav>
 
-  <div class="icons" id="icons"></div>
+  <div class="icons" id="icons" role="group" aria-label="Ícones de redes sociais"></div>
 </header>
-
 
 <!-- Imagem da Capa -->
 <div class="principal">
-  <img id="capa-img" src="" alt="Uma mulher fazendo um Procedimento Estético">
-  <div class="texto">
+  <img id="capa-img" src="" alt="Imagem de capa do blog da Clínica Meraki">
+  <div class="texto" role="heading" aria-level="1">
     <span id="capa-titulo"></span><br>
     <p id="capa-subtitulo"></p>
   </div>
 </div>
 
-
 <!-- Posts do Blog -->
-<section id="cards"></section>
-
+<section id="cards" role="region" aria-label="Artigos do blog"></section>
 
 <!-- Contatos/endereço/parte final do site...-->
-<section class="contatos">
-  <img src="" alt="Logo da Clinica" class="logo-secao" id="contato-logo">
+<section class="contatos" role="contentinfo" aria-label="Informações de contato">
+  <img src="" alt="Logo da Clínica Meraki" class="logo-secao" id="contato-logo">
 
   <div class="info" id="contato-info"></div>
 
@@ -59,7 +61,6 @@
 <!-- JS -->
 <script src="/WEB/JavaScript/blog.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>

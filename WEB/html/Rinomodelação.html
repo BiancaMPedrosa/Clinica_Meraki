@@ -12,40 +12,52 @@
 <body>
 
 <!-- Barra de navegação com o menu e os icons -->
- <header>
+<header role="banner" aria-label="Cabeçalho do site com logo, navegação e ícones">
   <div class="logo">
-    <img src="" id="logo-header" alt="Mulher tendo consulta com a Esteticista">
+    <img 
+      src="" 
+      id="logo-header" 
+      alt="Logo da clínica" 
+      aria-label="Logo da clínica"
+    >
   </div>
 
-  <nav class="navbar">
-    <ul class="navbar-nav flex-row gap-5" id="menu"></ul>
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <ul class="navbar-nav flex-row gap-5" id="menu" role="menubar"></ul>
   </nav>
 
-  <div class="icons" id="icons"></div>
+  <div class="icons" id="icons" aria-label="Links para redes sociais"></div>
 </header>
 
 
-
 <!-- CAPA -->
-<div class="principal">
-  <img id="capa-img" src="">
+<div class="principal" role="img" aria-label="Imagem principal da página">
+  <img id="capa-img" src="" alt="Imagem ilustrativa do procedimento de rinomodelação">
   <div class="texto">
-    <span id="capa-titulo"></span>
+    <span id="capa-titulo" role="heading" aria-level="1"></span>
   </div>
 </div>
 
+
 <!-- Seções do post -->
-<section id="introducao"></section>
-<section id="beneficios"></section>
-<section id="sessaoFinal"></section>
+<section id="introducao" aria-labelledby="introducao"></section>
+<section id="beneficios" aria-labelledby="beneficios"></section>
+<section id="sessaoFinal" aria-labelledby="sessaoFinal"></section>
+
 
 <!-- CONTATOS -->
-<section class="contatos">
-  <img id="contato-logo" class="logo-secao" alt="Logo da Clinica">
+<section class="contatos" role="contentinfo" aria-label="Informações de contato da clínica">
 
-  <div class="info" id="contato-info"></div>
+  <img 
+    id="contato-logo" 
+    class="logo-secao" 
+    alt="Logo da clínica"
+    aria-label="Logo da clínica"
+  >
 
-  <p class="copy" id="copy"></p>
+  <div class="info" id="contato-info" aria-label="Informações de contato"></div>
+
+  <p class="copy" id="copy" aria-label="Direitos autorais da clínica"></p>
 </section>
 
 
@@ -53,6 +65,7 @@
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 <script src="/WEB/JavaScript/Rinomodelação.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
