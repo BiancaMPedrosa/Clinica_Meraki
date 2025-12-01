@@ -1,131 +1,121 @@
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
+ margin: 0;
+ font-family: 'Montserrat', sans-serif;
 }
 
-/* HEADER */
+/* Header fixo sobre o topo */
 header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(12px);
-  padding: 10px 40px;
-  border-bottom: 2px solid #fae952;
-  z-index: 1000;
-}
-
-
-header ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 70px;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: rgba(0, 0, 0, 0.6);
+ padding: 10px 40px;
+ box-sizing: border-box;
+ z-index: 10;
 }
 
 .navbar-nav .nav-link {
   color: #fff;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
-  transition: color 0.25s;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #fae952 !important;
-}
-
-.nav-item.dropdown {
-  position: relative;
 }
 
 .navbar-nav .dropdown-menu {
-  position: absolute !important;
-  top: 45px !important;
-  left: 0;
-  background: rgba(0, 0, 0, 0.95) !important;
-  padding: 10px 0;
+  background: #0d0d0d !important;
   border-radius: 12px;
+  padding: 12px 0;
   border: none;
-  min-width: 200px;
-  backdrop-filter: blur(4px);
-  transform: translateY(10px);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.25s ease-in-out;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-  transform: translateY(0px);
-  opacity: 1;
-  visibility: visible;
 }
 
 .navbar-nav .dropdown-item {
-  padding: 14px 22px;
-  font-size: 16px;
-  color: #e5e5e5 !important;
-  transition: 0.2s;
+  color: #ccc !important;
+  padding: 10px 20px;
 }
 
 .navbar-nav .dropdown-item:hover {
-  background: rgba(255,255,255,0.15) !important;
-  color: #fae952 !important;
+  background: rgba(255,255,255,0.10) !important;
+  color: #fff !important;
 }
-
-/* LOGO */
+/* Ajuste no tamanho da logo */
 .logo img {
   height: 100px;
 }
 
-/* ICONS */
+/* Menu horizontal */
+ul{
+  list-style: none;
+  display:flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Estilo dos itens do menu */
+li {
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Estilo dos links */
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+ /* Destaque no hover */
+nav a:hover {
+  color: #f5c742;
+}
+
+/* Ícones do header  que ficam na barra de navegação*/
 .icons img {
-  width: 26px;
+  width: 25px;
   margin-left: 15px;
-  cursor: pointer;
   filter: brightness(0) invert(1);
-  transition: 0.3s;
+  transition: transform 0.3s;
+  cursor: pointer;
 }
 
-.icons img:hover {
-  transform: scale(1.15);
-  filter: brightness(0) invert(1) sepia(1) saturate(2000%) hue-rotate(10deg);
-}
-
-/* IMAGEM PRINCIPAL */
+/* Imagem principal */
 .principal img {
   width: 100%;
-  height: 550px;
+  height: 1000px;
   object-fit: cover;
-  filter: brightness(85%);
 }
 
+/* Texto de destaque que fica imagem */
 .texto {
   position: absolute;
-  top: 45%;
+  top: 60%;
   left: 10%;
-  background-color: rgba(255, 255, 255, 0.18);
-  padding: 35px 45px;
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 25px 35px;
   font-family: 'Cinzel Decorative', cursive;
-  font-size: 48px;
-  color: #f5d15c;
+  font-size: 50px;
+  color: #f5c742;
   line-height: 1.1;
-  backdrop-filter: blur(4px);
 }
 
+/* Subtítulo */
 .texto p {
   margin: 0;
-  font-size: 42px;
-  color: #f5d15c;
+  font-size: 40px;
+  color: #f5c742;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
 
-/* PROFISSIONAIS */
+
+
+/* LISTA DE PROFISSIONAIS */
 #lista-profissionais {
   display: flex;
   flex-direction: column;
@@ -134,6 +124,7 @@ header ul {
   padding: 60px 20px;
 }
 
+/* Card */
 .prof-card {
   display: grid;
   grid-template-columns: 420px 1fr;
@@ -145,6 +136,7 @@ header ul {
   border-bottom: 2px solid #e9e9e9;
 }
 
+/* Imagem com moldura */
 .prof-img-box {
   padding: 12px;
   background: linear-gradient(150deg, #ffdf6b, #e7b21c);
@@ -160,11 +152,13 @@ header ul {
   display: block;
 }
 
+/* Texto */
 .prof-text {
   max-width: 650px;
   width: 100%;
 }
 
+/* Nome do profissional */
 .prof-card h2 {
   font-size: 58px;
   font-weight: 700;
@@ -175,6 +169,7 @@ header ul {
   line-height: 1.05;
 }
 
+/* Parágrafo */
 .prof-card p {
   font-size: 20px;
   line-height: 1.55;
@@ -183,20 +178,32 @@ header ul {
   font-family: "Montserrat", sans-serif;
 }
 
+/* LisTA dos serviços que cada um oferece */
 .prof-card ul {
   display: block;
+  flex-direction: column;
   list-style: disc;
   padding-left: 22px;
   font-size: 19px;
   line-height: 1.5;
   color: #222;
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .prof-card li {
   margin-bottom: 6px;
+  display: list-item
 }
 
-/* FORM */
+
+
+#form-titulo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
 #form-duvidas {
   max-width: 500px;
   margin: 70px auto;
@@ -209,6 +216,7 @@ header ul {
   gap: 18px;
 }
 
+/* Inputs */
 #form-duvidas input,
 #form-duvidas textarea {
   width: 100%;
@@ -220,6 +228,14 @@ header ul {
   transition: 0.2s;
 }
 
+#form-duvidas input:focus,
+#form-duvidas textarea:focus {
+  outline: none;
+  border-color: #000;
+  background: #f4f4f4;
+}
+
+/* Botão principal */
 #form-duvidas button {
   padding: 14px;
   background: #000;
@@ -228,10 +244,17 @@ header ul {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.25s;
+}
+
+#form-duvidas button:hover {
+  opacity: 0.8;
 }
 
 /* MODAIS */
-.modal {
+#modal-confirmacao,
+#modal-sucesso,
+#modal-cancelado {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.55);
@@ -243,6 +266,7 @@ header ul {
   z-index: 9999;
 }
 
+/* Caixa central */
 .modal-box {
   background: #fff;
   padding: 32px;
@@ -251,7 +275,64 @@ header ul {
   width: 100%;
   text-align: center;
   border: 1px solid #000;
+  animation: fadeUp 0.28s ease-out;
 }
+
+/* Títulos */
+.modal-box h2 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+/* Texto */
+.modal-box p {
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.modal-box .btn-modal {
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  border: 2px solid #000;
+}
+
+/* Confirmar */
+#btn-confirmar-envio {
+  background: #000;
+  color: #fff;
+}
+
+#btn-confirmar-envio:hover {
+  background: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+/* Cancelar */
+#btn-cancelar-envio {
+  background: #fff;
+  color: #000;
+}
+
+#btn-cancelar-envio:hover {
+  background: #f2f2f2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+/* Colocando lado a lado com espaçamento */
+.modal-box .botoes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
 
 /* CONTATOS */
 .contatos {
@@ -261,11 +342,16 @@ header ul {
   color: #fff;
 }
 
+.contatos i {
+  color: #fae952 !important;
+  font-size: 22px;
+}
+
 .logo-secao {
   width: 150px;
   margin-bottom: 30px;
 }
-
+/* Linhas de informações */
 .linha {
   display: flex;
   align-items: center;
@@ -274,12 +360,86 @@ header ul {
   margin: 15px 0;
 }
 
+/* Texto das linhas */
 .linha span {
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Texto de direitos autorais */
 .copy {
   margin-top: 40px;
   font-size: 14px;
   opacity: 0.8;
+}
+
+
+  /* Site  do responsividade */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  /* Texto da capa */
+  .texto {
+    font-size: 36px;
+    left: 5%;
+    padding: 15px 25px;
+  }
+
+  .texto p {
+    font-size: 28px;
+  }
+
+  /* Lista de profissionais */
+  #lista-profissionais {
+    gap: 40px;
+    padding: 30px 10px;
+  }
+
+  /* Card em coluna */
+  .prof-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  /* Imagem responsiva */
+  .prof-img-box img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+
+  /* Texto do card */
+  .prof-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .prof-card h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .prof-card p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .prof-card ul {
+    font-size: 16px;
+    padding-left: 18px;
+  }
 }
