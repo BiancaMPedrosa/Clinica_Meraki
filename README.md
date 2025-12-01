@@ -146,7 +146,7 @@ O Firebase gerará automaticamente um link público.
 ## ✒️ Autores
 
 - **Beatriz Modesto** – Desenvolvimento, Documentação e IHC  
-- **Beatriz Lemos ** – Desenvolvimento, Documentação e IHC  
+- **Beatriz Lemos** – Desenvolvimento, Documentação e IHC  
 - **Evelyn de Assunção Silva** – Desenvolvimento, Documentação e Banco de Dados  
 
 ---
