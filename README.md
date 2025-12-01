@@ -1,9 +1,10 @@
 # 🌸 Clinica_Meraki - Landing Page
 
+<<<<<<< HEAD
 <img src="/WEB/Imagens/Home.png" alt="Home" width="880"/>
+=======
 
 ## • Projeto de Extensão 2025 ✨
-
 ---
 
 ## 📌 Descrição do Projeto
