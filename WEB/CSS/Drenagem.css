@@ -95,7 +95,7 @@ nav a:hover {
 /* Imagem principal */
 .principal img {
   width: 100%;
-  height: 1000px;
+  height: 550px;
   object-fit: cover;
   filter: brightness(85%);
 }
@@ -241,6 +241,21 @@ color: #f5c742; line-height: 1.1;
   color: #fff;
 }
 
+.icons i {
+  color: #fae952 !important;
+  font-size: 28px;
+  margin-left: 15px;
+}
+
+
+.contatos i {
+  color: #fae952 !important;
+  font-size: 22px;
+}
+
+.contatos img {
+   filter: sepia(1) saturate(1300%) hue-rotate(10deg) brightness(1.7);
+}
 
 /* Logo da Sessão de contatos */
 .logo-secao {
