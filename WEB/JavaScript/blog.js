@@ -1,8 +1,8 @@
 const firebaseConfig = {
     databaseURL: "https://meraki-blog-a295c-default-rtdb.firebaseio.com/"
-  };
+};
 
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 // BUSCAR DADOS
@@ -25,11 +25,10 @@ function montarHeader(header) {
   menu.innerHTML = "";
 
   header.menu.forEach(item => {
-    // Se tiver submenu → cria dropdown
     if (item.submenu) {
       menu.innerHTML += `
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button">
             ${item.nome}
           </a>
 
@@ -42,10 +41,7 @@ function montarHeader(header) {
           </ul>
         </li>
       `;
-    }
-
-    // Se NÃO tiver submenu → item comum
-    else {
+    } else {
       menu.innerHTML += `
         <li class="nav-item">
           <a class="nav-link" href="${item.link}">${item.nome}</a>
@@ -67,7 +63,6 @@ function montarHeader(header) {
   });
 }
 
-
 // CAPA
 function montarCapa(capa) {
   document.getElementById("capa-img").src = capa.imagem;
@@ -80,12 +75,12 @@ function montarCards(cards) {
   const container = document.getElementById("cards");
   container.innerHTML = "";
 
-cards.forEach(card => {
-  container.innerHTML += `
-    <div class="card">
-      <img src="${card.imagem}">
-      <button onclick="window.location.href='${card.link}'">${card.botao}</button>
-    </div>
+  cards.forEach(card => {
+    container.innerHTML += `
+      <div class="card">
+        <img src="${card.imagem}">
+        <button onclick="window.location.href='${card.link}'">${card.botao}</button>
+      </div>
     `;
   });
 }
@@ -113,29 +108,29 @@ function montarContatos(contato) {
   document.getElementById("copy").textContent = contato.copy;
 }
 
-   const vlibrasContainer = document.createElement("div");
-      vlibrasContainer.setAttribute("vw", "");
-      vlibrasContainer.classList.add("enabled");
-      vlibrasContainer.innerHTML = `
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      `;
-      document.body.appendChild(vlibrasContainer);
+// VLibras
+const vlibrasContainer = document.createElement("div");
+vlibrasContainer.setAttribute("vw", "");
+vlibrasContainer.classList.add("enabled");
+vlibrasContainer.innerHTML = `
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+`;
+document.body.appendChild(vlibrasContainer);
 
-      const scriptVLibras = document.createElement("script");
-      scriptVLibras.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
-      scriptVLibras.onload = () => {
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      };
-      document.body.appendChild(scriptVLibras);
-
+const scriptVLibras = document.createElement("script");
+scriptVLibras.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+scriptVLibras.onload = () => {
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+};
+document.body.appendChild(scriptVLibras);
 
 
 // MENU HAMBURGUER
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".menu-toggle");
+ const toggle = document.querySelector(".menu-toggle");
   const navbar = document.querySelector(".navbar");
 
   toggle.addEventListener("click", () => {

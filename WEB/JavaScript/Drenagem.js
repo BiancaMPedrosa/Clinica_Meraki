@@ -160,9 +160,9 @@ function montarContatos(contato) {
       };
       document.body.appendChild(scriptVLibras);
 
-      // MENU HAMBURGUER
+// MENU HAMBURGUER
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".menu-toggle");
+ const toggle = document.querySelector(".menu-toggle");
   const navbar = document.querySelector(".navbar");
 
   toggle.addEventListener("click", () => {
