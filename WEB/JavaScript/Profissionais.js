@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
+// ACESSIBILIDADE
   const vlibrasContainer = document.createElement("div");
       vlibrasContainer.setAttribute("vw", "");
       vlibrasContainer.classList.add("enabled");

@@ -142,7 +142,7 @@ function montarContatos(contato) {
   document.getElementById("copy").textContent = contato.copy;
 }
 
-
+// ACESSIBILIDADE
  const vlibrasContainer = document.createElement("div");
       vlibrasContainer.setAttribute("vw", "");
       vlibrasContainer.classList.add("enabled");
