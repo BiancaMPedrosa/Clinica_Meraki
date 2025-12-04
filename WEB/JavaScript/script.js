@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(res => res.json())
     .then(data => {
       preencherCarrossel(data.carousel);
-      preencherAvaliacoes(data.avaliacoes);
+     
      const descContainer = document.getElementById("descricao-texto");
 
     if (data.descricao && data.descricao.length > 0) {
@@ -40,23 +40,6 @@ function preencherCarrossel(itens) {
   });
 }
 
-function preencherAvaliacoes(avaliacoes) {
-  const container = document.getElementById("avaliacoes-content");
-  container.innerHTML = "";
-
-  avaliacoes.forEach(av => {
-    const estrelas = "⭐️".repeat(av.nota);
-    container.innerHTML += `
-      <div class="col-md-4 mb-3">
-        <div class="card shadow-sm p-3">
-          <h5>${estrelas}</h5>
-          <p>"${av.texto}"</p>
-          <small>- ${av.nome}</small>
-        </div>
-      </div>
-    `;
-  });
-}
    const vlibrasContainer = document.createElement("div");
       vlibrasContainer.setAttribute("vw", "");
       vlibrasContainer.classList.add("enabled");
@@ -74,4 +57,5 @@ function preencherAvaliacoes(avaliacoes) {
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       };
       document.body.appendChild(scriptVLibras);
+
 
